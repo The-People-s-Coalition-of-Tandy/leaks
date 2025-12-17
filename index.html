@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>Tandy Leaks</title>
     <style>
         body {
@@ -34,7 +34,6 @@
             color: #fff;
             letter-spacing: 0.5px;
         }
-
 
         .header-meta {
             display: flex;
@@ -343,112 +342,6 @@
         .promo-button:hover {
             background: #ff6666;
         }
-
-        /* Mobile inline ads - hidden on desktop */
-        .mobile-ad {
-            display: none;
-        }
-
-        /* Mobile styles */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2.2em;
-                text-align: center;
-            }
-
-            .header-meta {
-                flex-direction: column;
-                gap: 10px;
-                align-items: flex-start;
-            }
-
-            .header-stats {
-                flex-wrap: wrap;
-                gap: 10px;
-            }
-
-            .layout {
-                grid-template-columns: 1fr;
-                padding: 10px;
-                gap: 15px;
-            }
-
-            .sidebar {
-                height: auto;
-                position: relative;
-                top: 0;
-            }
-
-            .sidebar:first-of-type {
-                order: -1;
-            }
-
-            .sidebar:last-of-type {
-                order: 1;
-            }
-
-            .container {
-                padding: 10px;
-                order: 0;
-            }
-
-            .leak-grid {
-                grid-template-columns: 1fr;
-                gap: 15px;
-            }
-
-            .leak-item {
-                aspect-ratio: 4/3;
-            }
-
-            /* Show leak info by default on mobile since no hover */
-            .leak-info {
-                transform: translateY(0);
-                background: rgba(0, 0, 0, 0.9);
-            }
-
-            .promo-box {
-                margin-bottom: 15px;
-            }
-
-            .promo-box img {
-                height: 200px;
-            }
-
-            .promo-title {
-                font-size: 1.1em;
-            }
-
-            .notification {
-                width: calc(100% - 40px);
-                left: 20px;
-                right: auto;
-                top: auto;
-                bottom: -200px;
-                max-width: none;
-                transition: bottom 0.5s ease;
-            }
-
-            .notification.show {
-                bottom: 20px;
-                right: auto;
-            }
-
-            /* Hide first sidebar on mobile, show ads inline instead */
-            .sidebar:first-of-type {
-                display: none;
-            }
-
-            /* Mobile inline ads */
-            .mobile-ad {
-                display: block;
-            }
-
-            .disclaimer {
-                margin-top: 20px;
-                padding: 15px;
-            }
-        }
     </style>
 </head>
 <body>
@@ -521,17 +414,6 @@
                         <div class="metadata">id:jb_231225_01 • src:internal</div>
                     </div>
                 </div>
-
-                <!-- Mobile ad after first leak -->
-                <div class="promo-box mobile-ad">
-                    <div class="promo-label">Sponsored Content</div>
-                    <div class="promo-title">YOUR PHONE IS INFECTED!</div>
-                    <div class="promo-text">
-                        Social media is controlling your mind!
-                    </div>
-                    <button class="promo-button">SCAN NOW</button>
-                </div>
-
                 <div class="leak-item">
                     <img src="leak1.jpg" alt="Archive Content" class="leak-image">
                     <div class="leak-info">
@@ -550,17 +432,6 @@
                     </div>
                 </div>
 
-                <!-- Mobile ad after third leak -->
-                <div class="promo-box mobile-ad">
-                    <div class="promo-label">Sponsored Content</div>
-                    <div class="promo-title">WIN AN IPHONE 15!</div>
-                    <div class="promo-text">
-                        You are the 1,000,000th visitor!<br>
-                        Claim your prize now!
-                    </div>
-                    <button class="promo-button">CLAIM PRIZE</button>
-                </div>
-
                 <div class="leak-item">
                     <img src="nite.png" alt="Archive Content" class="leak-image">
                     <div class="leak-info">
@@ -568,16 +439,6 @@
                         <div class="leak-title">Unknown Project</div>
                         <div class="metadata">id:jb_231224_01 • verified</div>
                     </div>
-                </div>
-
-                <!-- Mobile ad after last leak -->
-                <div class="promo-box mobile-ad">
-                    <div class="promo-label">Sponsored Content</div>
-                    <div class="promo-title">Nordin AutoVirus</div>
-                    <div class="promo-text">
-                        Nordin AutoVirus is a new way to make money online.<br>
-                    </div>
-                    <button class="promo-button">INVEST NOW</button>
                 </div>
             </div>
 
